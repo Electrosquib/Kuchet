@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+    color: #FFFFD0;
+}
+
+body {
+    background: hsla(286, 100%, 90%, 1);
+    background: linear-gradient(180deg, hsla(286, 100%, 90%, 1) 0%, hsla(272, 80%, 63%, 1) 100%);
+    background: -moz-linear-gradient(180deg, hsla(286, 100%, 90%, 1) 0%, hsla(272, 80%, 63%, 1) 100%);
+    background: -webkit-linear-gradient(180deg, hsla(286, 100%, 90%, 1) 0%, hsla(272, 80%, 63%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F3CCFF", endColorstr="#A555EC", GradientType=1 );
+    text-align: center;
+}
+
+/* Add a black background color to the top navigation */
+.nav {
+    overflow: hidden;
+    margin-top: 3%;
+    margin-right: 3%;
+}
+
+.nav a {
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFD0;
+}
+
+/* Change the color of links on hover */
+.nav a:hover {
+    color: #D09CFA;
+  }
+  
+/* Add a color to the active/current link */
+.nav a.active {
+    color: #A555EC;
+}
+.subtitle {
+    color: #FFFFD0;
+}
+
+p {
+    color: #FFFFD0;
+    line-height: 140%;
+}
+
+img {
+    position: absolute;
+    left: 7%;
+    top: 25%;
+    rotate: -10deg;
+    z-index: -1;
+    filter: drop-shadow(15px 15px 15px #A555EC);
+}
+i {
+    color: #FFFFD0;
+    margin-right: 1%;
+}
+
+/* Computer screen size */
+@media only screen and (min-width: 600px) {
+/* Style the links inside the navigation bar */
+  .nav a {
+    font-size: 17px;
+    float: right;
+    padding: 14px 16px;
+  }
+  .title {
+    font-family: "Dancing Script", cursive;
+    font-size: 200px;
+    color: #FFFFD0;
+    margin-top: 10%;
+    filter: drop-shadow(15px 15px 15px #A555EC);
+}
+.bounds {
+    width: 80%;
+    margin-left: 10%;
+}
+#br {
+    display: none;
+}
+}
+
+/* Phone screen size */
+@media only screen and (max-width: 600px) {
+    .nav {
+        margin-top: 10%;
+        text-align: center;
+        overflow: hidden;
+    }
+    .nav a {
+        padding: 2%;
+        margin-top: 15%;
+        font-size: 25px;
+        margin-left: 0;
+    }
+    .nav a:hover {
+        color: #A555EC;
+    }
+    .bounds {
+        width: 100%;
+    };
+    body {
+        background: hsla(286, 100%, 90%, 1);
+        background: linear-gradient(180deg, hsla(286, 100%, 90%, 1) 0%, hsla(272, 86%, 73%, 1) 100%);
+        background: -moz-linear-gradient(180deg, hsla(286, 100%, 90%, 1) 0%, hsla(272, 86%, 73%, 1) 100%);
+        background: -webkit-linear-gradient(180deg, hsla(286, 100%, 90%, 1) 0%, hsla(272, 86%, 73%, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F3CCFF", endColorstr="#BE7FF5", GradientType=1 );
+    }
+    .title {
+        margin-top: -5%;
+        font-family: "Dancing Script", cursive;
+        font-size: 100px;
+        color: #FFFFD0;
+    }
+    img {
+        position: relative;
+        width: 80%;
+        margin-left: -15%;
+        margin-top: 5%;
+        rotate: 0deg;
+    }
+      
+    }
